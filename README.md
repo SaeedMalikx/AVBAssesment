@@ -1,6 +1,18 @@
 
 # AVB Frontend Assesment
 
+## Summary
+
+Included is a working comment app that fetches from an external API and allows the user to add a comment. I have structured the app where app.js handles all data fetching and passing props to components. The initial comments are loaded from an external API, same mock comments. The API call is made with Axios and kept simple as possible. The data is stored in redux slice and then passed to components. I wasn't sure on what the requirements were for input fields and none were given so there is only a simple error check on string length. 
+
+
+
+-Slices/comment.js contain the selectors for getting the Top 3 Commenters.
+-There are 2 new components created CommentList and CommenterList.
+-The Material UI theme is using orange as primary and purple as secondary
+
+
+
 ## User Story
 
 As a user, I would like to be able to read a list of comments, add a comment, and see a list of the top 3 commenters.
